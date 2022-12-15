@@ -26,6 +26,10 @@
 	gap: 4%;
 }
 
+.flex{
+  display: flex;
+}
+
 .column,
 .columns {
   width: 100%;

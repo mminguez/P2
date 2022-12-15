@@ -5,11 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/barebones.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton-legacy.css">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <link href="./css/barebones.css" rel="stylesheet" type="text/css">
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./css/skeleton-legacy.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/685c2e35dc.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <header>
+      <div class= "header-image"></div>
+      <nav class= "main-nav flex">
+        <ul class="flex">
+            <li><a href="#">Hébergements</a></li>
+            <li><a href="#">Activités</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="search">
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+      <form class="searchBar flex" action="#" method="GET">
+          <div class="containerMarker flex">
+              <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <input type="search" class="searchInput" placeholder="Marseille, France">
+          <button class="searchButton">
+              <span>Rechercher</span>
+              <i class="fas fa-search"></i>
+          </button>
+      </form>
+
+      <div class="filters flex">
+          <div class="textFilter">Filtres</div>
+          <div class="filterList flex">
+
+              <div class="filter flex">
+                  <div class="iconFilter flex">
+                      <i class="fas fa-money-bill-wave"></i>
+                  </div>
+                  <span>Économique</span>
+              </div>
+              
+              <div class="filter flex">
+                  <div class="iconFilter flex">
+                      <i class="fas fa-child"></i>
+                  </div>
+                  <span>Familial</span>
+              </div>
+              
+              <div class="filter flex">
+                  <div class="iconFilter flex">
+                      <i class="fas fa-heart"></i>
+                  </div>
+                  <span>Romantique</span>
+              </div>
+
+              <div class="filter flex">
+                  <div class="iconFilter flex">
+                      <i class="fas fa-dog"></i>
+                  </div>
+                  <span>Animaux autorisés</span>
+              </div>
+
+          </div>
+      </div>
+      <div class="containerInfo flex">
+          <div class="iconInfo flex">
+              <i class="fas fa-info"></i>
+          </div>
+          Plus de 500 logements sont disponibles dans cette ville
+      </div>
+    </div>
+
   </body>
 </html>
