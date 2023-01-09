@@ -30,6 +30,7 @@
 .textFilter {
     font-size: 18px;
     font-weight: 700;
+    margin-right: 20px;
 }
 
 .filter {
@@ -76,7 +77,6 @@
 
 .searchBar {
     width: auto;
-    height: 49;
 }
 
 .searchBar .containerMarker {
@@ -97,7 +97,6 @@
     font-size: 18px;
     color: black;
     font-weight: 700;
-    margin-left: -15;
 }
 
 .searchButton {
@@ -147,7 +146,9 @@
     display: flex;
     width: 380px;
     gap: 33px;
+    flex-direction: column;
 }
+
 
 .hebergement-list, .populaire-list {
     flex-wrap: wrap;
@@ -170,6 +171,7 @@
 .populaire-list a article {
     display: flex;
     height: 144px;
+    max-height: 100%;
 }
 
 .hebergement-list a article .fa-star.blue {
@@ -190,6 +192,8 @@
 
 .hebergement-list a, .populaire-list a {
     color: black;
+    margin: 0px;
+    margin-bottom: 30px;
     text-decoration: none;
 }
 
@@ -198,16 +202,23 @@
 }
 
 .hebergement-list a article .article-content h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 16px;
 }
 
-.hebergement-list a article .article-content p  {
+.hebergement-list a article .article-content p, .populaire-list h3, .populaire-list p  {
+    padding-top: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     font-size: 14px;
 }
 
+
 .populaire-list a article img {
-    width: 100%;
-    height: 144px;
+    width: 127px;
+    min-width: 127px;
+    height: 134px;
     border-radius: 20px 0px 0px 20px;
     border: 5px solid #FFFFFF;
     object-fit: cover;
@@ -225,8 +236,8 @@
 
 #hebergement .populaire .chart-icone {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 40px;
+    right: 40px;
 }
 
 #hebergement .populaire {
@@ -249,7 +260,7 @@
 
 #hebergement .populaire .hebergement-list a article img {
     border-radius: 20px 0px 0px 20px;
-    width: 137;
+    width: 137px;
 }
 
 #hebergement .populaire .hebergement-list a article .article-content {
@@ -268,7 +279,6 @@
 .activite-list {
     display: flex;
     justify-content: space-between;
-    height: 445;
 }
 
 .activite-list .column {

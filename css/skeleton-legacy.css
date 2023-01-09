@@ -47,155 +47,123 @@
 }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    border-top: none;
+    border-bottom: 2px solid;
+    border-color: #F2F2F2;
+    margin: 0px;
+  }
+
+  body {
     padding: 0;
+  }
+
+  #header-image {
+    justify-content: center;
+  }
+
+  .main-nav {
+    justify-content: center;
+  }
+
+  #hebergement {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  .container_p {
+    border-radius: 0px;
+    width: 767px;
+  }
+
+  .marseille {
+    height: 1400px;
+  }
+
+  .marseille .hebergement-list {
+    flex-direction: column;
+  }
+
+  .subtitle {
+    display: none;
+  }
+  
+  .populaire-list {
+    flex-direction: column;
+  }
+  
+  #activite {
+    margin: 20px;
+    margin-top: 100px;
+  }
+
+  .activite-list {
+    flex-direction: column;
+  }
+  
+  .activite-list article {
+    height: 190px;
+    max-height: 190px;
+    width: 334px;
+  }
+  
+  footer {
+    flex-direction: column;
   }
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container {
-    width: 80%;
+@media (min-width: 992px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #header-image {
+    max-width: 475px;
   }
 
-  .row {
-    width: 100%;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 4%;
-    margin-bottom: 10px;
+  #hebergement {
+    flex-direction: column;
+    gap: 50px;
   }
 
-  .one.column,
-  .one.columns {
-    grid-column-end: span 1;
+  .textFilter {
+    margin-right: 5px;
   }
 
-  .two.columns {
-    grid-column-end: span 2;
+  .filterList {
+    gap: 15px;
   }
 
-  .three.columns {
-    grid-column-end: span 3;
+  .filters {
+    margin-left: 0px;
   }
 
-  .four.columns {
-    grid-column-end: span 4;
+  .container_p {
+    width: 840px;
+    height: 280px;
   }
 
-  .five.columns {
-    grid-column-end: span 5;
+  .container_p a {
+    width: 30%;
   }
 
-  .six.columns {
-    grid-column-end: span 6;
+  .activite-list {
+    height: 267px;
   }
 
-  .seven.columns {
-    grid-column-end: span 7;
+  .activite-list article {
+    max-height: 100%;
+    width: 182px;
+
   }
 
-  .eight.columns {
-    grid-column-end: span 8;
-  }
-
-  .nine.columns {
-    grid-column-end: span 9;
-  }
-
-  .ten.columns {
-    grid-column-end: span 10;
-  }
-
-  .eleven.columns {
-    grid-column-end: span 11;
-  }
-
-  .twelve.columns {
-    grid-column-end: span 12;
-  }
-
-  .one-third.column {
-    grid-column-end: span 4;
-  }
-
-  .two-thirds.column {
-    grid-column-end: span 8;
-  }
-
-  .one-half.column {
-    grid-column-end: span 6;
-  }
-
-  /* Offsets */
-  .offset-by-one.column,
-  .offset-by-one.columns {
-    grid-column-start: 2;
-  }
-
-  .offset-by-two.column,
-  .offset-by-two.columns {
-    grid-column-start: 3;
-  }
-
-  .offset-by-three.column,
-  .offset-by-three.columns {
-    grid-column-start: 4;
-  }
-
-  .offset-by-four.column,
-  .offset-by-four.columns {
-    grid-column-start: 5;
-  }
-
-  .offset-by-five.column,
-  .offset-by-five.columns {
-    grid-column-start: 6;
-  }
-
-  .offset-by-six.column,
-  .offset-by-six.columns {
-    grid-column-start: 7;
-  }
-
-  .offset-by-seven.column,
-  .offset-by-seven.columns {
-    grid-column-start: 8;
-  }
-
-  .offset-by-eight.column,
-  .offset-by-eight.columns {
-    grid-column-start: 9;
-  }
-
-  .offset-by-nine.column,
-  .offset-by-nine.columns {
-    grid-column-start: 10;
-  }
-
-  .offset-by-ten.column,
-  .offset-by-ten.columns {
-    grid-column-start: 11;
-  }
-
-  .offset-by-eleven.column,
-  .offset-by-eleven.columns {
-    grid-column-start: 12;
-  }
-
-  .offset-by-one-third.column,
-  .offset-by-one-third.columns {
-    grid-column-start: 5;
-  }
-
-  .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns {
-    grid-column-start: 9;
-  }
-
-  .offset-by-one-half.column,
-  .offset-by-one-half.columns {
-    grid-column-start: 7;
+  .activite-list .column article h3 {
+    vertical-align: middle;
+    text-align: center;
+    padding: 5%;
   }
 }

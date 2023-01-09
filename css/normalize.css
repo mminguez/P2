@@ -70,6 +70,7 @@ footer {
   max-width: 1400px;
   background-color: #F2F2F2;;
   margin: 60px 0px;
+  margin-bottom: 0px;
   padding: 45px 70px;
   display: flex;
 }
