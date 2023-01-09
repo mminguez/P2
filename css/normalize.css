@@ -13,6 +13,10 @@ h1 {
   font-size: 22px;
 }
 
+h2 {
+  font-size: 22px;
+}
+
 p {
   font-weight: 400;
 }
@@ -51,6 +55,7 @@ header nav ul li {
   padding: 44px 25px;
   border-top: 2px solid transparent;
   margin: 0px 20px 0px 20px;
+  flex-shrink: 1;
 }
 
 header nav ul li:hover {

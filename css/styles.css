@@ -8,7 +8,6 @@
 .main-nav {
     font-size: 16px;
     font-weight: 500;
-    display: flex;
     justify-content: flex-end;
 }
 
@@ -91,12 +90,15 @@
 }
 
 .searchBar .searchInput {
+    font-family: 'Raleway', sans-serif;
     display: inline-block;
     border: 1px solid #F2F2F2;
     height: 49px;
     font-size: 18px;
     color: black;
     font-weight: 700;
+    outline: none;
+    padding-left: 10px;
 }
 
 .searchButton {
@@ -123,23 +125,39 @@
 /* hébergements */
 
 #hebergement {
-    margin-top: 39px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
 
 #hebergement section h2 {
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 #hebergement section .container, .container_p {
     background-color: #F2F2F2;
-    padding: 20px 20px 10px 20px;
+    padding: 30px 30px 0px 30px;
     border-radius: 20px;
     height: 595px;
     width: 880px;
     box-sizing: content-box;
     gap: 30px;
+}
+
+.star-rate {
+    display: flex;
+    font-size: 70%;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.populaire-list .star-rate {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 .container_p {
@@ -165,13 +183,19 @@
     border-radius: 20px;
     height: 199px;
     width: 246px;
-    box-shadow: 5px 5px 5px 0px #E2E2E2;
+    box-shadow: 5px 5px 5px 0px #F2F2F2;
 }
 
 .populaire-list a article {
     display: flex;
     height: 144px;
     max-height: 100%;
+    margin-left: 20px;
+    width: 345px;
+}
+
+.title_icon {
+    margin-bottom: -20px;
 }
 
 .hebergement-list a article .fa-star.blue {
@@ -183,7 +207,7 @@
 }
 
 .hebergement-list a article img {
-    width: 100%;
+    width: 96%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
     border: 5px solid #FFFFFF;
@@ -298,7 +322,7 @@
 
 .activite-list .column article {
     height: 445px;
-    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    box-shadow: 5px 5px 5px 0px #F2F2F2;
     border-radius: 25px;
 }
 
