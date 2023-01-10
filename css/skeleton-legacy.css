@@ -117,6 +117,10 @@
     background-color: white;
   }
 
+  #hebergement .populaire .chart-icone {
+    right: -10px;
+  }
+
   .container_p {
     border-radius: 0px;
     width: 767px;
@@ -172,6 +176,10 @@
   #hebergement {
     flex-direction: column;
     gap: 50px;
+  }
+
+  #hebergement .populaire .chart-icone {
+    right: -440px;
   }
 
   .textFilter {
