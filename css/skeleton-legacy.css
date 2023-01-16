@@ -1,32 +1,3 @@
-/* include this file if you want to duplicate all classes available
- * the original skeleton boilerplate.
- *
- * Note: if you are creating a new site, this file is not needed 
- * and simpler CSS Grid elements should be used without all the 
- * additional classes on HTML elements. See the Readme for examples.
-*/
-
-
-/* Grid –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* 	Directives to replicate all skeleton.css functionality */
-/* .row becomes a grid container with 12 columns */
-.container,
-.row {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.row {
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 4%;
-}
-
 .flex {
   display: flex;
 }
@@ -46,7 +17,95 @@
   box-sizing: border-box;
 }
 
-/* For devices larger than 400px */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #header-image {
+    max-width: 50vw;
+  }
+
+  #hebergement {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .textFilter {
+    margin-right: 5px;
+  }
+
+  .filterList {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filter {
+    width: 150px;
+  }
+
+  .filters {
+    width: 85vw;
+    margin-left: 0px;
+  }
+
+  .populaire-list {
+    width: 95%;
+  }
+
+  .populaire-list a article {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .populaire-list a article img {
+    min-width: 85px;
+  }
+
+  .hebergement-list {
+    width: 95%;
+    margin-right: 0px;
+  }
+
+  #hebergement .marseille {
+    width: calc(100vw - 130px);
+  }
+
+  #hebergement section .container, .container_p {
+    width: calc(100vw - 160px);
+    padding-right: 0px;
+  }
+
+  .hebergement-list a article {
+    width: auto;
+  }
+
+  .container_p {
+    height: 280px;
+  }
+
+  .container_p a {
+    width: 30%;
+  }
+
+  .activite-list {
+    height: 267px;
+    gap: 20px;
+  }
+
+  .activite-list .column article {
+    max-height: 100%;
+    height: 267px;
+  }
+
+  .activite-list .column {
+    width: 19vw;
+  }
+
+  .activite-list .column article h3 {
+    vertical-align: middle;
+    text-align: center;
+    padding: 5%;
+  }
+}
+
 @media (max-width: 767px) {
   header {
     flex-direction: column;
@@ -64,6 +123,10 @@
 
   body {
     padding: 0;
+  }
+
+  main {
+    max-width: 100vw;
   }
 
   #header-image {
@@ -95,7 +158,7 @@
   }
 
   .searchBar .searchInput {
-    width: 400px;
+    width: 100%;
   }
 
   .searchButton span {
@@ -103,8 +166,8 @@
   }
 
   .hebergement-list a article {
-    width: 380px;
-    margin-left: 20px;
+    width: 90vw;
+    margin-left: 0px;
   }
 
   #hebergement {
@@ -117,17 +180,24 @@
     background-color: white;
   }
 
-  #hebergement .populaire .chart-icone {
-    right: -10px;
+  #hebergement .populaire {
+    width: 100vw;
   }
 
   .container_p {
     border-radius: 0px;
-    width: 767px;
   }
 
-  .marseille {
+  #hebergement .marseille {
     height: 1400px;
+    width: 100vw;
+  }
+
+  #hebergement section .container, .container_p {
+    width: calc(100vw - 30px);
+    padding-right: 0px;
+    padding-left: 20px;
+    margin: 0px;
   }
 
   .marseille .hebergement-list {
@@ -143,13 +213,14 @@
   }
 
   .populaire-list a article {
-    width: 50%;
+    width: 90vw;
+    margin-left: 0px;
   }
   
   #activite {
     margin: 20px;
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .activite-list {
@@ -160,68 +231,10 @@
   .activite-list article {
     height: 190px;
     max-height: 190px;
-    width: 380px;
+    width: 86vw;
   }
   
   footer {
     flex-direction: column;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #header-image {
-    max-width: 475px;
-  }
-
-  #hebergement {
-    flex-direction: column;
-    gap: 50px;
-  }
-
-  #hebergement .populaire .chart-icone {
-    right: -440px;
-  }
-
-  .textFilter {
-    margin-right: 5px;
-  }
-
-  .filterList {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .filters {
-    margin-left: 0px;
-  }
-
-  .populaire-list a article {
-    width: 250px;
-    margin-left: 0px;
-  }
-
-  .container_p {
-    width: 840px;
-    height: 280px;
-  }
-
-  .container_p a {
-    width: 30%;
-  }
-
-  .activite-list {
-    height: 267px;
-  }
-
-  .activite-list article {
-    max-height: 100%;
-    width: 182px;
-
-  }
-
-  .activite-list .column article h3 {
-    vertical-align: middle;
-    text-align: center;
-    padding: 5%;
   }
 }

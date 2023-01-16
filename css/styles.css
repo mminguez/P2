@@ -2,7 +2,12 @@
     padding: 44px 0 0 0;
     height: 19px;
     display: flex;
+}
 
+#header-image img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .main-nav {
@@ -194,10 +199,6 @@
     width: 345px;
 }
 
-.title_icon {
-    margin-bottom: -20px;
-}
-
 .hebergement-list a article .fa-star.blue {
     color: #0065FC;
 }
@@ -303,10 +304,14 @@
 .activite-list {
     display: flex;
     justify-content: space-between;
+    gap: 43px;
+}
+
+.activite-list a {
+    width: 23%;
 }
 
 .activite-list .column {
-    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
