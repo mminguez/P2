@@ -149,7 +149,9 @@
   }
 
   .filter {
-    width: 150px;
+    width: 110px;
+    font-size: 14px;
+
   }
 
   .searchButton .fa-search {

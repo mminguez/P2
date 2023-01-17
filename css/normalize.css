@@ -2,7 +2,6 @@
 
 /* Document
    ========================================================================== */
-
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -22,6 +21,7 @@ p {
 }
 
 body {
+  max-width: 1400px;
   margin: 0;
   padding: 21px;
   font-family: 'Raleway', sans-serif;

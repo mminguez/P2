@@ -187,7 +187,7 @@
     background-color: white;
     border-radius: 20px;
     height: 199px;
-    width: 246px;
+    width: 100%;
     box-shadow: 5px 5px 5px 0px #F2F2F2;
 }
 
@@ -250,7 +250,7 @@
 }
 
 #hebergement .marseille {
-    width: 880px;
+    width: 63%;
 }
 
 #hebergement .marseille .subtitle {
@@ -266,7 +266,7 @@
 }
 
 #hebergement .populaire {
-    width: 420px;
+    width: 35%;
     position: relative;
 }
 
