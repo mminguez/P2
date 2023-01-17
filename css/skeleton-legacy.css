@@ -38,11 +38,10 @@
   }
 
   .filter {
-    width: 150px;
+    width: 124px;
   }
 
   .filters {
-    width: 85vw;
     margin-left: 0px;
   }
 
@@ -65,11 +64,11 @@
   }
 
   #hebergement .marseille {
-    width: calc(100vw - 130px);
+    width: calc(100vw - 60px);
   }
 
   #hebergement section .container, .container_p {
-    width: calc(100vw - 160px);
+    width: calc(100vw - 90px);
     padding-right: 0px;
   }
 
@@ -122,7 +121,7 @@
   }
 
   body {
-    padding: 0;
+    padding: 0px;
   }
 
   main {
@@ -181,7 +180,7 @@
   }
 
   #hebergement .populaire {
-    width: 100vw;
+    width: 100%;
   }
 
   .container_p {
@@ -190,7 +189,7 @@
 
   #hebergement .marseille {
     height: 1400px;
-    width: 100vw;
+    width: 100%;
   }
 
   #hebergement section .container, .container_p {
